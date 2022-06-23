@@ -27,7 +27,6 @@ source = html.H3("Vanessa Scharf, Data Visualisation 2022", style = {'text-align
 
 # Component 2
 # Barplot per Year Total
-
 bar_total = px.bar(
     data_frame = dff,
      x = dff['Year'],
@@ -38,7 +37,6 @@ bar_total.update_layout(title = 'Total Infection Counts 2000 - 2019')
 
 # Component 3
 # Barplot per State
-
 barplot_states = px.bar(data_frame = df,
                  x = df['State'],
                  y = df['Count_Total'],
@@ -93,7 +91,8 @@ app.layout = html.Div([
         # Second column of Row
         dbc.Col(
             html.Div([
-                dcc.Graph(figure = bar_total)]))
+                dcc.Graph(figure = bar_total)
+                ]))
         ]),
         
      dbc.Row(html.Div([
