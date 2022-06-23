@@ -81,7 +81,6 @@ app.layout = html.Div(
          ),
 
      dbc.Row(
-         
           html.Div([
               dcc.Graph(figure = barplot_states)
               ])
@@ -89,7 +88,8 @@ app.layout = html.Div(
 ),
      
      
-     dbc.Row([source])])
+     dbc.Row([source])
+     ])
 
 ### Dropdown
 
