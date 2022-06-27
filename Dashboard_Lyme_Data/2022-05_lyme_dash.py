@@ -14,7 +14,7 @@ app = dash.Dash(__name__, server = server, external_stylesheets=[dbc.themes.BOOT
 
 # read files
 #df = pd.read_csv('df_add_total.csv')
-df = pd.read_csv('aggregated_states2.csv')
+df = pd.read_csv('aggregated_states.csv')
 dff = pd.read_csv('years_summed.csv')
 
 # build header components
