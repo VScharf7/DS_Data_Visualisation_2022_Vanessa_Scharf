@@ -32,7 +32,7 @@ bar_total = px.bar(
      x = dff['Year'],
      y = dff['Total'],
      color = None)
-bar_total.update_traces(marker_color='red')
+bar_total.update_traces(marker_color='dodgerblue')
 bar_total.update_layout(title = 'Total Infection Counts 2000 - 2019')
 
 # Component 3
@@ -41,7 +41,7 @@ barplot_states = px.bar(data_frame = df,
                  x = df['State'],
                  y = df['Count_Total'],
                 color = 'Year',
-                color_continuous_scale=px.colors.sequential.Reds)
+                color_continuous_scale=px.colors.sequential.Blues)
 barplot_states.update_layout(title = 'Total Infection Counts per State')
 
 
@@ -128,7 +128,7 @@ def update_graph(option_slctd):
         scope="usa",
         color='Count_Total',
         hover_data=['State', 'Count_Total'],
-        color_continuous_scale=px.colors.sequential.YlOrRd,)
+        color_continuous_scale=px.colors.sequential.YlGnBu,)
 
     return container, fig
 
